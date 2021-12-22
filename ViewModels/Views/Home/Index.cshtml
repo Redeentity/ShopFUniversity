@@ -1,0 +1,11 @@
+﻿@model HomeViewModel
+<h1> The best dishes: </h1>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Item item in Model.favItems)
+        {
+            @Html.Partial("AllItems", item)
+        }
+
+    }
+</div>
